@@ -1,0 +1,29 @@
+<div *ngIf="activeProject" class="container">
+    <div class="row text-center form-group">
+        <div class="col-xs-12">
+            <h2>{{activeProject.name}}</h2>
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-xs-12">
+            <p>{{activeProject.text}}</p>
+        </div>
+    </div>
+    <div *ngIf="activeProject.images && activeProject.images.length" class="row form-group text-center">
+        <div class="col-xs-12">
+            <h3>Image project</h3>
+        </div>
+        <div *ngFor="let image of activeProject.images" class="col-xs-12 col-sm-4 col-md-4 col-lg-3 form-group">
+            <img src={{image.src}} alt={{image.src}} title={{image.src}}>
+        </div>
+    </div>
+    <div *ngIf="employeeProject && employeeProject.length" class="row form-group text-center">
+        <div class="col-xs-12">
+            <h3>Employees working on the project</h3>
+        </div>
+        <div *ngFor="let employee of employeeProject" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 form-group">
+            <img src={{employee.image}} alt="{{employee.firstName}} {{employee.lastName}}" title="{{employee.firstName}}  {{employee.lastName}}">
+        </div>
+    </div>
+
+</div>

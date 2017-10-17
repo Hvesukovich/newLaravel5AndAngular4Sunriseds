@@ -1,0 +1,119 @@
+<!--Specializations-->
+<div class="row form-group">
+    <div class="col-xs-12 col-sm-8">
+        <h2 class="sub-header">Contacts</h2>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <button class="btn btn-success form-control" (click)="addContact()" data-toggle="modal"
+                data-target="#contact">
+            Add project
+        </button>
+    </div>
+</div>
+<div class="table-responsive" *ngIf="storageService.contactsClone.length">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>country</th>
+            <th>Editing</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let contact of storageService.contactsClone; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{contact.country}}</td>
+            <td>
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary" title="Editing" data-toggle="modal"
+                                data-target="#contact"
+                                (click)="editingContact(contact, i)">
+                            Editing
+                        </button>
+                        <button type="button" class="btn btn-secondary text-danger" title="Delite"
+                                (click)="delContact(contact.id, i)">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!--End specializations-->
+
+<!--Start modal window CONTACT-->
+<div class="modal fade" id="contact" tabindex="-1" role="dialog">
+    <div *ngIf="contactActive" class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        (click)="undoModalWindows()">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="ModalLabelSpecialization">Editing contact</h4>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <div class="container-fluid">
+                        <div class="input-group form-group col-xs-12">
+                            <label for="{{contactActive.country}}" class="input-group-addon">Country</label>
+                            <input name="{{contactActive.country}}" id="{{contactActive.country}}" type="text"
+                                   class="form-control"
+                                   placeholder="Country" [(ngModel)]="contactActive.country">
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="input-group form-group col-xs-12">
+                            <label for="address" class="input-group-addon">Address</label>
+                            <input name="address" id="address" type="text"
+                                   class="form-control"
+                                   placeholder="Address" [(ngModel)]="contactActive.address">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="input-group form-group">
+                                <label for="longitude" class="input-group-addon">Longitude</label>
+                                <input name="longitude" id="longitude" type="text" class="form-control"
+                                       placeholder="Longitude" [(ngModel)]="contactActive.longitude">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="input-group form-group">
+                                <label for="latitude" class="input-group-addon">Latitude</label>
+                                <input name="latitude" id="latitude" type="text" class="form-control"
+                                       placeholder="Latitude" [(ngModel)]="contactActive.latitude">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid" *ngIf="contactActive.emails">
+                        <div *ngFor="let email of contactActive.emails; let i = index"
+                             class="input-group form-group col-xs-12">
+                            <label for="email{{i}}" class="input-group-addon">email</label>
+                            <input name="email{{i}}" id="email{{i}}" type="email"
+                                   class="form-control"
+                                   placeholder="Email" [(ngModel)]="email.email">
+                            <span class="input-group-addon cursor-pointer" (click)="delEmail(contactActive.emails, i)"
+                                  title="Delite">
+                                <i class="fa fa-trash text-danger"></i>
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success" (click)="addEmail(contactActive.emails)">Add email</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" aria-label="Close"
+                        class="btn btn-default ulockd-btn-thm2 center-block" (click)="saveChanges()">Save
+                    changes
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End modal window CONTACT-->

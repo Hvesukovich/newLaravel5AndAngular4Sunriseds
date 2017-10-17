@@ -1,0 +1,52 @@
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+.padding-top {
+  padding-top: 10px;
+}
+
+#image, #image2{
+  display: none;
+}
+.label-img {
+  padding: 0;
+}
+#employee-img {
+  //max-height: 92px;
+  //max-width: 92px;
+  background-color: #fff;
+}
+.technologies{
+  padding: 10px;
+  border: 2px solid silver;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 449px) {
+  .big-edit-employee{
+    display: none;
+  }
+  .little-edit-employee{
+    display: block;
+  }
+}
+@media screen and (min-width: 450px) {
+  .big-edit-employee{
+    display: block;
+  }
+  .little-edit-employee{
+    display: none;
+  }
+}
+.border{
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 10px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}

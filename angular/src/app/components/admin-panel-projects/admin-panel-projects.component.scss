@@ -1,0 +1,22 @@
+.description-label, .text-label{
+  width: 100%;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  margin-bottom: -3px;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 5px 8px 5px;
+}
+.border{
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 10px;
+}
+.height-auto{
+  height: auto;
+}
+#description_for_employee{
+  min-height: 75px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}

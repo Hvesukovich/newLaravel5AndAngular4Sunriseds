@@ -1,0 +1,36 @@
+<section class="form-group">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center">
+        <div class="ulockd-main-title">
+          <h2 class="text-uppercase">OUR <span class="text-thm2">Team</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem labore voluptates consequuntur velit necessitatibus maiores fugiat eaque.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row form-group">
+      <div *ngFor="let employee of storageService.team" class="col-xs-12 col-sm-6 col-md-3">
+        <div class="ulockd-team-two-member">
+          <div class="ulockd-tm-thumb">
+            <img class="img-responsive img-whp" src="{{employee.image}}" alt="{{employee.image}}">
+            <div class="ulockd-team-two-mdetails">
+              <div class="ulockd-tm-name" [routerLink]="'/team-details/' + employee.id">{{employee.firstName}} {{employee.lastName}}</div>
+              <h5 class="ulockd-tm-post">{{employee.position}}</h5>
+              <ul class="list-inline ulockd-tm-sicon ulockd-bgthm">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+              <ul class="list-unstyled ulockd-tm-fpm ulockd-bgthm">
+                <li>Fax: 1-888-hpaafaxme</li>
+                <li>Phone: +98 9875 5968 54</li>
+                <li>Mail: jones@mail.se</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

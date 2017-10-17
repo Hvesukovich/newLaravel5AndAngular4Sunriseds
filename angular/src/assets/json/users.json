@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Sergei",
+    "email": "sergei@gmail.ru",
+    "password": "123"
+  },
+  {
+    "name": "Alex Rozhnov",
+    "email": "alex@gmail.ru",
+    "password": "qwe"
+  },
+  {
+    "name": "Vitali Kovalevski",
+    "email": "vitalik@gmail.ru",
+    "password": "asd"
+  },
+  {
+    "name": "Vitali Loseu",
+    "email": "Vitalil@gmail.ru",
+    "password": "zxc"
+  }
+]

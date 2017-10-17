@@ -1,0 +1,140 @@
+[
+  {
+    "firstName": "Alex",
+    "lastName": "Rozhnov",
+    "sity": "Minsk",
+    "image": "assets/images/team/team1.jpg",
+    "position": "Full stack web-developer",
+    "technologies": [
+      {
+        "name": "JavaScript",
+        "experience": "6 years",
+        "ico": "ios-pulse",
+        "color": "#FFA500"
+      },
+      {
+        "name": "Angular 4",
+        "experience": "1 year",
+        "ico": "logo-angular",
+        "color": "#FF0000"
+      },
+      {
+        "name": "Aurelia",
+        "experience": "3 years",
+        "ico": "logo-angular",
+        "color": "#FF0000"
+      },
+      {
+        "name": "PHP",
+        "experience": "8 years",
+        "ico": "ios-nuclear",
+        "color": "#0000FF"
+      },
+      {
+        "name": "HTML 5",
+        "experience": "7 years",
+        "ico": "logo-html5",
+        "color": "#FFA500"
+      }
+    ]
+  },
+  {
+    "firstName": "Vitaly",
+    "lastName": "Losev",
+    "sity": "Minsk",
+    "image": "assets/images/team/team2.jpg",
+    "position": "Front-end developer, dev-ops",
+    "technologies": [
+      {
+        "name": "PHP",
+        "experience": "5 years",
+        "ico": "ios-nuclear",
+        "color": "#0000FF"
+      },
+      {
+        "name": "JavaScript",
+        "experience": "2 years",
+        "ico": "ios-pulse",
+        "color": "#FFA500"
+      },
+      {
+        "name": "Angular 4",
+        "experience": "1 year",
+        "ico": "logo-angular",
+        "color": "#FF0000"
+      },
+      {
+        "name": "HTML 5",
+        "experience": "4 years",
+        "ico": "logo-html5",
+        "color": "#FFA500"
+      }
+    ]
+  },
+  {
+    "firstName": "Sergey",
+    "lastName": "Dmitrienko",
+    "sity": "Minsk",
+    "image": "assets/images/team/team3.jpg",
+    "position": "Front-end developer",
+    "technologies": [
+      {
+        "name": "PHP",
+        "experience": "1 year",
+        "ico": "ios-nuclear",
+        "color": "#0000FF"
+      },
+      {
+        "name": "Angular 4",
+        "experience": "1 year",
+        "ico": "logo-angular",
+        "color": "#FF0000"
+      },
+      {
+        "name": "HTML 5",
+        "experience": "1 year",
+        "ico": "logo-html5",
+        "color": "#FFA500"
+      }
+    ]
+  },
+  {
+    "firstName": "Vitali",
+    "lastName": "Kovalevski",
+    "sity": "San Francisco",
+    "image": "assets/images/team/team4.jpg",
+    "position": "Front-end developer",
+    "technologies": [
+      {
+        "name": "JavaScript",
+        "experience": "6 years",
+        "ico": "ios-pulse",
+        "color": "#FFA500"
+      },
+      {
+        "name": "Angular 4",
+        "experience": "1 year",
+        "ico": "logo-angular",
+        "color": "#FF0000"
+      },
+      {
+        "name": "Aurelia",
+        "experience": "3 years",
+        "ico": "logo-angular",
+        "color": "#FF0000"
+      },
+      {
+        "name": "PHP",
+        "experience": "8 years",
+        "ico": "ios-nuclear",
+        "color": "#0000FF"
+      },
+      {
+        "name": "HTML 5",
+        "experience": "7 years",
+        "ico": "logo-html5",
+        "color": "#FFA500"
+      }
+    ]
+  }
+]

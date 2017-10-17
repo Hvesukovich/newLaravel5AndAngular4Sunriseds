@@ -1,0 +1,81 @@
+<!--<div class="preloader"></div>-->
+<div class="header-topped">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-inline tac-smd">
+                    <li><a href="#"><i class="flaticon-email-filled-closed-envelope text-thm2"></i>
+                        bMaxyour@email.com</a></li>
+                    <li><a href="#"><i class="flaticon-old-handphone text-thm2"></i> +98 9875 5968 54</a></li>
+                    <li><a href="#"><i class="flaticon-home text-thm2"></i> Four infity loop Av. 45635</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="social-linked">
+                    <ul class="list-inline">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-inline tac-smd">
+                    <li>
+                        <div class="dropdown lang-button text-center">
+                            <button class="dropbtn">Language</button>
+                            <div class="dropdown-content">
+                                <a href="#"> <span><img src="assets/tpl/images/resource/english.jpg" alt=""></span>
+                                    English</a>
+                                <a href="#"> <span><img src="assets/tpl/images/resource/franch.jpg" alt=""></span>
+                                    French</a>
+                                <a href="#"> <span><img src="assets/tpl/images/resource/spanish.jpg" alt=""></span>
+                                    Spanish</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="login-popup">
+                        <a href="#modal-login-now" data-toggle="modal">Sign In</a>
+                        <!--Start modal window-->
+                        <div class="modal fade" id="modal-login-now" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-md" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title text-center" id="exampleModalLabel">Login</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-sm-12 text-center hvr-float-shadow">
+                                                <form class="ulockd-login-form">
+                                                    <p>Enter username and password to login:</p>
+                                                    <div class="form-group">
+                                                        <input name="userName" type="email" class="form-control" id="email"
+                                                               placeholder="Email" [(ngModel)]="userName">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input name="userPassword" type="password" class="form-control"
+                                                               placeholder="Password" [(ngModel)]="userPassword">
+                                                    </div>
+                                                    <button type="button" data-dismiss="modal" aria-label="Close"
+                                                            class="btn btn-default ulockd-btn-thm2" (click)="SignIn(userName, userPassword)">Login
+                                                        to account
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End modal window-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

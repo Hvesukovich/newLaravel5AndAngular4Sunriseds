@@ -1,0 +1,149 @@
+<!--Technologies-->
+<div class="row form-group">
+    <div class="col-xs-12 col-sm-8">
+        <h2 class="sub-header">Technologies</h2>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <button class="btn btn-success form-control" (click)="addTechnology()" data-toggle="modal"
+                data-target="#technology">
+            Add technologies
+        </button>
+    </div>
+</div>
+<div class="table-responsive" *ngIf="storageService.technologiesClone.length">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Technology</th>
+            <th>Display</th>
+            <th>Editing</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let technology of storageService.technologiesClone; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{technology.name}}</td>
+            <td>{{technology.display}}</td>
+            <td>
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary" title="Editing" data-toggle="modal"
+                                data-target="#technology"
+                                (click)="editingTechnology(technology, i)">
+                            Editing
+                        </button>
+                        <button type="button" class="btn btn-secondary text-danger" title="Delite"
+                                (click)="delTechnology(technology.id, i)">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!--End technologies-->
+
+<!--Start modal window TECHNOLOGY-->
+<div class="modal fade" id="technology" tabindex="-1" role="dialog">
+    <div *ngIf="technologyActive" class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="undoModalWindows()">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="ModalLabelTechnology">Editing
+                    {{technologyActive.name}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div>
+                            <div class="input-group form-group">
+                                <label for="technologyName" class="input-group-addon">Technology</label>
+                                <input name="technologyName" id="technologyName" type="text"
+                                       class="form-control"
+                                       placeholder="Technology name" [(ngModel)]="technologyActive.name">
+                            </div>
+                            <div class="input-group form-group">
+                                <label for="technologyIco" class="input-group-addon">Technology ico</label>
+                                <input name="technologyIco" id="technologyIco" type="text" class="form-control"
+                                       placeholder="Technology ico" [(ngModel)]="technologyActive.ico">
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="input-group form-group">
+                                        <label for="technologyColor" class="input-group-addon">Color</label>
+                                        <input name="technologyColor" id="technologyColor" type="color"
+                                               class="form-control" placeholder="Color"
+                                               [(ngModel)]="technologyActive.color"
+                                               [style.backgroundColor]="technologyActive.color">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="input-group form-group">
+                                        <label for="technologyColor#" class="input-group-addon">Cod color:</label>
+                                        <input name="technologyColor#" id="technologyColor#" type="text" class="form-control"
+                                               placeholder="Cod color" [(ngModel)]="technologyActive.color">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-group form-group center-block">
+                                <label for="image" class="label-img cursor-pointer" id="basic-addon5">
+                                    <img *ngIf="technologyActive.img" id="technology-img" [src]="technologyActive.img">
+                                </label>
+                                <input id="image" type="file" (change)="getFileName($event)">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-7">
+                                    <div class="input-group form-group">
+                                        <label class="input-group-addon">Show:</label>
+                                        <div class="btn-group btn-group-justified" role="group">
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-default border-left"
+                                                        [ngClass]="{
+                                                     'active':(technologyActive.ico_or_img === 1)
+                                                       }" (click)="choiceLogo(1)">image</button>
+                                            </div>
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-default"
+                                                        [ngClass]="{
+                                                     'active':(technologyActive.ico_or_img === 0)
+                                                       }" (click)="choiceLogo(0)">ico</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-5">
+                                    <div class="text-center">
+                                        <div class="input-group form-group">
+                                            <label for="display" class="input-group-addon">Technology display</label>
+                                            <input name="display" id="display" type="checkbox"
+                                                   class="form-control center-block" [(ngModel)]="technologyActive.display">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" aria-label="Close"
+                        class="btn btn-default ulockd-btn-thm2 center-block" (click)="saveChanges()">Save
+                    changes
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End modal window TECHNOLOGY-->

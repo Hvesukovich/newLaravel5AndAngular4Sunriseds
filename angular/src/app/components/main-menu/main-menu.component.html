@@ -1,0 +1,46 @@
+<!-- Header Styles -->
+<header class="header-nav">
+  <div class="main-header-nav navbar-scrolltofixed">
+    <div class="container">
+      <nav class="navbar navbar-default bootsnav menu-style1">
+
+        <div class="container ulockd-pad90">
+
+
+          <!-- Start Header Navigation -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+          <!-- End Header Navigation -->
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-left" data-in="bounceIn">
+              <li>
+                <a routerLink="home" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+              </li>
+              <li>
+                <a routerLink="projects" class="dropdown-toggle" data-toggle="dropdown">Projects</a>
+              </li>
+              <li>
+                <a routerLink="team" class="dropdown-toggle" data-toggle="dropdown">Team</a>
+              </li>
+              <li>
+                <a routerLink="about" class="dropdown-toggle" data-toggle="dropdown">About</a>
+              </li>
+              <li>
+                <a routerLink="contacts" class="dropdown-toggle" data-toggle="dropdown">Contacts</a>
+              </li>
+              <li *ngIf="usersService.user">
+                <a routerLink="admin" class="dropdown-toggle" data-toggle="dropdown">Admin panel</a>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+
+      </nav>
+    </div>
+  </div>
+</header>

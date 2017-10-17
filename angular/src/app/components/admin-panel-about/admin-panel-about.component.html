@@ -1,0 +1,67 @@
+<!--About-->
+<div *ngIf="storageService.aboutClone" class="form-group text-center border">
+    <h2 class="sub-header">About</h2>
+    <div *ngFor="let about of storageService.aboutClone">
+        <div class="tabs">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#basic_information" data-toggle="tab">Basic information</a></li>
+                <li><a href="#images" data-toggle="tab">Images</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade in active padding-top" id="basic_information">
+                    <!--Basic information-->
+                    <div class="input-group form-group">
+                        <label for="title" class="input-group-addon">Title</label>
+                        <input name="title" id="title" type="text"
+                               class="form-control"
+                               placeholder="Title" [(ngModel)]="about.title">
+                    </div>
+                    <div class="form-group">
+                        <label for="description" class="description-label text-center">Description about</label>
+                        <textarea name="description" id="description" class="form-control" rows="3"
+                                  placeholder="Description about" [(ngModel)]="about.description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="text" class="text-label text-center">Text about</label>
+                        <textarea name="text" id="text" class="form-control" rows="8"
+                                  placeholder="Text about" [(ngModel)]="about.text"></textarea>
+                    </div>
+                    <!--End basic information-->
+                </div>
+                <div class="tab-pane fade padding-top" id="images">
+                    <!--Images about-->
+                    <div class="form-group border">
+                        <label class="form-control text-center">Images about</label>
+                        <div class="row">
+                            <div *ngFor="let img of about.images; let i = index" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="thumbnail">
+                                    <img [src]="img.src" alt="{{img.name}}" title="{{img.name}}">
+                                    <div class="caption text-center">
+                                        <button class="btn btn-success">Edit</button>
+                                        <button class="btn btn-success" (click)="delImg(about, img, i)"><i class="fa fa-trash"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="thumbnail">
+                                    <label for="image">
+                                        <img class="btn" src="http://sunrise.loc/images/about/holder_about.png" alt="Add image"
+                                             title="Add an image">
+                                    </label>
+                                    <input id="image" type="file" (change)="addImage($event, about)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End images about-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-success" (click)="cancelChanges()">Cancel changes</button>
+        <button class="btn btn-success" (click)="saveChanges()">Save changes</button>
+    </div>
+</div>
+
+<!--End about-->

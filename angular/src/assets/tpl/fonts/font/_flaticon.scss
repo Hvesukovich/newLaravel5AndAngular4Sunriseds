@@ -1,0 +1,339 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 10/06/2017 13:14
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-water:before { content: "\f100"; }
+.flaticon-interface:before { content: "\f101"; }
+.flaticon-wedding-invitation:before { content: "\f102"; }
+.flaticon-calendar-1:before { content: "\f103"; }
+.flaticon-event-date-and-time-symbol:before { content: "\f104"; }
+.flaticon-rice:before { content: "\f105"; }
+.flaticon-chicken-plate-on-a-hand:before { content: "\f106"; }
+.flaticon-burger-on-plate:before { content: "\f107"; }
+.flaticon-volunteer:before { content: "\f108"; }
+.flaticon-chat-2:before { content: "\f109"; }
+.flaticon-chat-1:before { content: "\f10a"; }
+.flaticon-chat:before { content: "\f10b"; }
+.flaticon-medal-2:before { content: "\f10c"; }
+.flaticon-credit-card-1:before { content: "\f10d"; }
+.flaticon-facebook:before { content: "\f10e"; }
+.flaticon-twitter:before { content: "\f10f"; }
+.flaticon-flickr:before { content: "\f110"; }
+.flaticon-right-arrow-1:before { content: "\f111"; }
+.flaticon-left-arrow-1:before { content: "\f112"; }
+.flaticon-left-arrow:before { content: "\f113"; }
+.flaticon-right-arrow:before { content: "\f114"; }
+.flaticon-add:before { content: "\f115"; }
+.flaticon-instagram:before { content: "\f116"; }
+.flaticon-house-key:before { content: "\f117"; }
+.flaticon-checkbox-pen-outline:before { content: "\f118"; }
+.flaticon-linkedin-logo:before { content: "\f119"; }
+.flaticon-facebook-logo:before { content: "\f11a"; }
+.flaticon-twitter-logo-on-black-background:before { content: "\f11b"; }
+.flaticon-email-filled-closed-envelope:before { content: "\f11c"; }
+.flaticon-clock-circular-outline:before { content: "\f11d"; }
+.flaticon-24-hours-phone-assistance-service:before { content: "\f11e"; }
+.flaticon-folder:before { content: "\f11f"; }
+.flaticon-trophy-for-sports:before { content: "\f120"; }
+.flaticon-black-back-closed-envelope-shape:before { content: "\f121"; }
+.flaticon-staff-symbol:before { content: "\f122"; }
+.flaticon-link-symbol:before { content: "\f123"; }
+.flaticon-calendar-with-a-clock-time-tools:before { content: "\f124"; }
+.flaticon-magnifier:before { content: "\f125"; }
+.flaticon-multiple-users-silhouette:before { content: "\f126"; }
+.flaticon-opened-email-envelope:before { content: "\f127"; }
+.flaticon-play-button-1:before { content: "\f128"; }
+.flaticon-tags:before { content: "\f129"; }
+.flaticon-map-marker:before { content: "\f12a"; }
+.flaticon-square-shape-shadow:before { content: "\f12b"; }
+.flaticon-flickr-website-logo-silhouette:before { content: "\f12c"; }
+.flaticon-add-square-button:before { content: "\f12d"; }
+.flaticon-mark:before { content: "\f12e"; }
+.flaticon-old-handphone:before { content: "\f12f"; }
+.flaticon-checked-mark:before { content: "\f130"; }
+.flaticon-twitter-logo-silhouette:before { content: "\f131"; }
+.flaticon-lock:before { content: "\f132"; }
+.flaticon-blocks-with-angled-cuts:before { content: "\f133"; }
+.flaticon-shirt-1:before { content: "\f134"; }
+.flaticon-business-10:before { content: "\f135"; }
+.flaticon-medical-2:before { content: "\f136"; }
+.flaticon-like:before { content: "\f137"; }
+.flaticon-people-12:before { content: "\f138"; }
+.flaticon-protest:before { content: "\f139"; }
+.flaticon-justice:before { content: "\f13a"; }
+.flaticon-medical-1:before { content: "\f13b"; }
+.flaticon-technology:before { content: "\f13c"; }
+.flaticon-money-5:before { content: "\f13d"; }
+.flaticon-business-9:before { content: "\f13e"; }
+.flaticon-people-11:before { content: "\f13f"; }
+.flaticon-envelope:before { content: "\f140"; }
+.flaticon-credit-card:before { content: "\f141"; }
+.flaticon-command:before { content: "\f142"; }
+.flaticon-classroom:before { content: "\f143"; }
+.flaticon-internet:before { content: "\f144"; }
+.flaticon-giftbox:before { content: "\f145"; }
+.flaticon-donation:before { content: "\f146"; }
+.flaticon-shirt:before { content: "\f147"; }
+.flaticon-animals:before { content: "\f148"; }
+.flaticon-business-8:before { content: "\f149"; }
+.flaticon-focus:before { content: "\f14a"; }
+.flaticon-people-9:before { content: "\f14b"; }
+.flaticon-people-8:before { content: "\f14c"; }
+.flaticon-unlink:before { content: "\f14d"; }
+.flaticon-hand-shake:before { content: "\f14e"; }
+.flaticon-clock-2:before { content: "\f14f"; }
+.flaticon-play-button:before { content: "\f150"; }
+.flaticon-clock-1:before { content: "\f151"; }
+.flaticon-id-card:before { content: "\f152"; }
+.flaticon-money-4:before { content: "\f153"; }
+.flaticon-people-7:before { content: "\f154"; }
+.flaticon-people-6:before { content: "\f155"; }
+.flaticon-location:before { content: "\f156"; }
+.flaticon-people-5:before { content: "\f157"; }
+.flaticon-agreement:before { content: "\f158"; }
+.flaticon-business-7:before { content: "\f159"; }
+.flaticon-speech-bubble:before { content: "\f15a"; }
+.flaticon-business-6:before { content: "\f15b"; }
+.flaticon-telephone-2:before { content: "\f15c"; }
+.flaticon-social:before { content: "\f15d"; }
+.flaticon-medal-1:before { content: "\f15e"; }
+.flaticon-medal:before { content: "\f15f"; }
+.flaticon-people-4:before { content: "\f160"; }
+.flaticon-people-3:before { content: "\f161"; }
+.flaticon-people-2:before { content: "\f162"; }
+.flaticon-money-3:before { content: "\f163"; }
+.flaticon-coins:before { content: "\f164"; }
+.flaticon-money-2:before { content: "\f165"; }
+.flaticon-health-care:before { content: "\f166"; }
+.flaticon-business-5:before { content: "\f167"; }
+.flaticon-man:before { content: "\f168"; }
+.flaticon-casual-t-shirt:before { content: "\f169"; }
+.flaticon-beach-house:before { content: "\f16a"; }
+.flaticon-house:before { content: "\f16b"; }
+.flaticon-medical:before { content: "\f16c"; }
+.flaticon-clothes-donation:before { content: "\f16d"; }
+.flaticon-cross:before { content: "\f16e"; }
+.flaticon-money-1:before { content: "\f16f"; }
+.flaticon-business-4:before { content: "\f170"; }
+.flaticon-home-icon-silhouette:before { content: "\f171"; }
+.flaticon-signature:before { content: "\f172"; }
+.flaticon-connection:before { content: "\f173"; }
+.flaticon-business-3:before { content: "\f174"; }
+.flaticon-business-2:before { content: "\f175"; }
+.flaticon-buildings:before { content: "\f176"; }
+.flaticon-responsible-energy-use:before { content: "\f177"; }
+.flaticon-dove-of-peace:before { content: "\f178"; }
+.flaticon-make-a-donation:before { content: "\f179"; }
+.flaticon-hands:before { content: "\f17a"; }
+.flaticon-raise-your-hand-to-ask:before { content: "\f17b"; }
+.flaticon-woman-and-child-holding-hands:before { content: "\f17c"; }
+.flaticon-charity-donation:before { content: "\f17d"; }
+.flaticon-money:before { content: "\f17e"; }
+.flaticon-black-check-box:before { content: "\f17f"; }
+.flaticon-target:before { content: "\f180"; }
+.flaticon-gentleman:before { content: "\f181"; }
+.flaticon-business-1:before { content: "\f182"; }
+.flaticon-clock:before { content: "\f183"; }
+.flaticon-telephone-1:before { content: "\f184"; }
+.flaticon-business:before { content: "\f185"; }
+.flaticon-restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle:before { content: "\f186"; }
+.flaticon-t-shirt-black-silhouette:before { content: "\f187"; }
+.flaticon-people-1:before { content: "\f188"; }
+.flaticon-tool:before { content: "\f189"; }
+.flaticon-users-group:before { content: "\f18a"; }
+.flaticon-books-stack-of-three:before { content: "\f18b"; }
+.flaticon-house-on-square-background-with-check-mark:before { content: "\f18c"; }
+.flaticon-home:before { content: "\f18d"; }
+.flaticon-thumbs-up-hand-symbol:before { content: "\f18e"; }
+.flaticon-umbrella-black-silhouette:before { content: "\f18f"; }
+.flaticon-medical-kit:before { content: "\f190"; }
+.flaticon-telephone:before { content: "\f191"; }
+.flaticon-people:before { content: "\f192"; }
+.flaticon-home-page:before { content: "\f193"; }
+.flaticon-straight-quotes:before { content: "\f194"; }
+.flaticon-calendar:before { content: "\f195"; }
+    
+    $font-Flaticon-water: "\f100";
+    $font-Flaticon-interface: "\f101";
+    $font-Flaticon-wedding-invitation: "\f102";
+    $font-Flaticon-calendar-1: "\f103";
+    $font-Flaticon-event-date-and-time-symbol: "\f104";
+    $font-Flaticon-rice: "\f105";
+    $font-Flaticon-chicken-plate-on-a-hand: "\f106";
+    $font-Flaticon-burger-on-plate: "\f107";
+    $font-Flaticon-volunteer: "\f108";
+    $font-Flaticon-chat-2: "\f109";
+    $font-Flaticon-chat-1: "\f10a";
+    $font-Flaticon-chat: "\f10b";
+    $font-Flaticon-medal-2: "\f10c";
+    $font-Flaticon-credit-card-1: "\f10d";
+    $font-Flaticon-facebook: "\f10e";
+    $font-Flaticon-twitter: "\f10f";
+    $font-Flaticon-flickr: "\f110";
+    $font-Flaticon-right-arrow-1: "\f111";
+    $font-Flaticon-left-arrow-1: "\f112";
+    $font-Flaticon-left-arrow: "\f113";
+    $font-Flaticon-right-arrow: "\f114";
+    $font-Flaticon-add: "\f115";
+    $font-Flaticon-instagram: "\f116";
+    $font-Flaticon-house-key: "\f117";
+    $font-Flaticon-checkbox-pen-outline: "\f118";
+    $font-Flaticon-linkedin-logo: "\f119";
+    $font-Flaticon-facebook-logo: "\f11a";
+    $font-Flaticon-twitter-logo-on-black-background: "\f11b";
+    $font-Flaticon-email-filled-closed-envelope: "\f11c";
+    $font-Flaticon-clock-circular-outline: "\f11d";
+    $font-Flaticon-24-hours-phone-assistance-service: "\f11e";
+    $font-Flaticon-folder: "\f11f";
+    $font-Flaticon-trophy-for-sports: "\f120";
+    $font-Flaticon-black-back-closed-envelope-shape: "\f121";
+    $font-Flaticon-staff-symbol: "\f122";
+    $font-Flaticon-link-symbol: "\f123";
+    $font-Flaticon-calendar-with-a-clock-time-tools: "\f124";
+    $font-Flaticon-magnifier: "\f125";
+    $font-Flaticon-multiple-users-silhouette: "\f126";
+    $font-Flaticon-opened-email-envelope: "\f127";
+    $font-Flaticon-play-button-1: "\f128";
+    $font-Flaticon-tags: "\f129";
+    $font-Flaticon-map-marker: "\f12a";
+    $font-Flaticon-square-shape-shadow: "\f12b";
+    $font-Flaticon-flickr-website-logo-silhouette: "\f12c";
+    $font-Flaticon-add-square-button: "\f12d";
+    $font-Flaticon-mark: "\f12e";
+    $font-Flaticon-old-handphone: "\f12f";
+    $font-Flaticon-checked-mark: "\f130";
+    $font-Flaticon-twitter-logo-silhouette: "\f131";
+    $font-Flaticon-lock: "\f132";
+    $font-Flaticon-blocks-with-angled-cuts: "\f133";
+    $font-Flaticon-shirt-1: "\f134";
+    $font-Flaticon-business-10: "\f135";
+    $font-Flaticon-medical-2: "\f136";
+    $font-Flaticon-like: "\f137";
+    $font-Flaticon-people-12: "\f138";
+    $font-Flaticon-protest: "\f139";
+    $font-Flaticon-justice: "\f13a";
+    $font-Flaticon-medical-1: "\f13b";
+    $font-Flaticon-technology: "\f13c";
+    $font-Flaticon-money-5: "\f13d";
+    $font-Flaticon-business-9: "\f13e";
+    $font-Flaticon-people-11: "\f13f";
+    $font-Flaticon-envelope: "\f140";
+    $font-Flaticon-credit-card: "\f141";
+    $font-Flaticon-command: "\f142";
+    $font-Flaticon-classroom: "\f143";
+    $font-Flaticon-internet: "\f144";
+    $font-Flaticon-giftbox: "\f145";
+    $font-Flaticon-donation: "\f146";
+    $font-Flaticon-shirt: "\f147";
+    $font-Flaticon-animals: "\f148";
+    $font-Flaticon-business-8: "\f149";
+    $font-Flaticon-focus: "\f14a";
+    $font-Flaticon-people-9: "\f14b";
+    $font-Flaticon-people-8: "\f14c";
+    $font-Flaticon-unlink: "\f14d";
+    $font-Flaticon-hand-shake: "\f14e";
+    $font-Flaticon-clock-2: "\f14f";
+    $font-Flaticon-play-button: "\f150";
+    $font-Flaticon-clock-1: "\f151";
+    $font-Flaticon-id-card: "\f152";
+    $font-Flaticon-money-4: "\f153";
+    $font-Flaticon-people-7: "\f154";
+    $font-Flaticon-people-6: "\f155";
+    $font-Flaticon-location: "\f156";
+    $font-Flaticon-people-5: "\f157";
+    $font-Flaticon-agreement: "\f158";
+    $font-Flaticon-business-7: "\f159";
+    $font-Flaticon-speech-bubble: "\f15a";
+    $font-Flaticon-business-6: "\f15b";
+    $font-Flaticon-telephone-2: "\f15c";
+    $font-Flaticon-social: "\f15d";
+    $font-Flaticon-medal-1: "\f15e";
+    $font-Flaticon-medal: "\f15f";
+    $font-Flaticon-people-4: "\f160";
+    $font-Flaticon-people-3: "\f161";
+    $font-Flaticon-people-2: "\f162";
+    $font-Flaticon-money-3: "\f163";
+    $font-Flaticon-coins: "\f164";
+    $font-Flaticon-money-2: "\f165";
+    $font-Flaticon-health-care: "\f166";
+    $font-Flaticon-business-5: "\f167";
+    $font-Flaticon-man: "\f168";
+    $font-Flaticon-casual-t-shirt: "\f169";
+    $font-Flaticon-beach-house: "\f16a";
+    $font-Flaticon-house: "\f16b";
+    $font-Flaticon-medical: "\f16c";
+    $font-Flaticon-clothes-donation: "\f16d";
+    $font-Flaticon-cross: "\f16e";
+    $font-Flaticon-money-1: "\f16f";
+    $font-Flaticon-business-4: "\f170";
+    $font-Flaticon-home-icon-silhouette: "\f171";
+    $font-Flaticon-signature: "\f172";
+    $font-Flaticon-connection: "\f173";
+    $font-Flaticon-business-3: "\f174";
+    $font-Flaticon-business-2: "\f175";
+    $font-Flaticon-buildings: "\f176";
+    $font-Flaticon-responsible-energy-use: "\f177";
+    $font-Flaticon-dove-of-peace: "\f178";
+    $font-Flaticon-make-a-donation: "\f179";
+    $font-Flaticon-hands: "\f17a";
+    $font-Flaticon-raise-your-hand-to-ask: "\f17b";
+    $font-Flaticon-woman-and-child-holding-hands: "\f17c";
+    $font-Flaticon-charity-donation: "\f17d";
+    $font-Flaticon-money: "\f17e";
+    $font-Flaticon-black-check-box: "\f17f";
+    $font-Flaticon-target: "\f180";
+    $font-Flaticon-gentleman: "\f181";
+    $font-Flaticon-business-1: "\f182";
+    $font-Flaticon-clock: "\f183";
+    $font-Flaticon-telephone-1: "\f184";
+    $font-Flaticon-business: "\f185";
+    $font-Flaticon-restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle: "\f186";
+    $font-Flaticon-t-shirt-black-silhouette: "\f187";
+    $font-Flaticon-people-1: "\f188";
+    $font-Flaticon-tool: "\f189";
+    $font-Flaticon-users-group: "\f18a";
+    $font-Flaticon-books-stack-of-three: "\f18b";
+    $font-Flaticon-house-on-square-background-with-check-mark: "\f18c";
+    $font-Flaticon-home: "\f18d";
+    $font-Flaticon-thumbs-up-hand-symbol: "\f18e";
+    $font-Flaticon-umbrella-black-silhouette: "\f18f";
+    $font-Flaticon-medical-kit: "\f190";
+    $font-Flaticon-telephone: "\f191";
+    $font-Flaticon-people: "\f192";
+    $font-Flaticon-home-page: "\f193";
+    $font-Flaticon-straight-quotes: "\f194";
+    $font-Flaticon-calendar: "\f195";

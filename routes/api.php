@@ -21,16 +21,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('login-verification', 'UsersController@loginVerification');
 
 //API technologies
-//Route::post('get-all-technologies', 'TechnologiesController@getAllTechnologies')
-//    ->middleware('cors');
 Route::post('save-technology','TechnologiesController@saveTechnology')
     ->middleware('cors');
 Route::post('delete-technology','TechnologiesController@deleteTechnology')
     ->middleware('cors');
 
 //API contacts
-//Route::post('get-all-contacts', 'ContactsController@getAllContacts')
-//    ->middleware('cors');
 Route::post('save-contact','ContactsController@saveContact')
     ->middleware('cors');
 Route::post('delete-contact','ContactsController@deleteContact')
